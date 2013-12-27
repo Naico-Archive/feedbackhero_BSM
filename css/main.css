@@ -1,0 +1,267 @@
+
+.overall_header_container {
+  margin: auto;
+  margin-top: 25px;
+  width: 560px; 
+  text-align: center;
+  font-size: 56px;
+  padding: 40px;
+}
+
+.overall_answer_container {
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 26px; 
+  width: 610px; 
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.smile_container {
+  display: block;
+  float: left;
+  margin-left: 12px;
+}
+
+.smile_container_first {
+  margin-left: 6px;
+}
+
+.smile_image {
+  width: 140px;
+}
+
+.smile_text {
+  font-size: 20px;
+  color: rgb(100, 100, 100);
+  text-align: center;
+  margin-top: 8px;
+}
+
+.smile_rating_container {
+  width: 600px;
+  height: 140px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.smile_rating_text{
+  text-align: center;
+  font-size: 24px;
+}
+
+.smile_rating_options_container {
+  margin-top: 5px;
+  -webkit-tap-highlight-color: transparent;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.smile_rating_option_container {
+  position: relative;
+  float: left;
+  width: 120px;
+  text-align: center;
+}
+
+.smile_rating_option_selected {
+  position: absolute;
+  display: none;
+  width: 81px;
+  height: 79px;
+  z-index: -1;
+  top: 0px;
+  left: 18px;
+  background-color: lightblue;
+  border: 2px solid darkcyan;
+  border-radius: 10px;
+}
+
+.smile_rating_option_selected_image {
+  width: 100px;
+}
+
+.smile_rating_option_image {
+  width: 70px;
+}
+
+.smile_rating_option_text {
+  text-align: center;
+  font-size: 18px;
+}
+
+.thank_you_container {
+  margin: auto;
+  /*width: 620px; */
+  text-align: center;
+  font-size: 56px;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.thank_you_company_logo_container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.thank_you_company_logo_container img {
+  max-width: 160px;
+  /*max-height: 70px;*/
+}
+
+.thank_you_feebackhero_logo_container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.thank_you_feebackhero_logo_container img {
+  width: 160px;
+}
+
+.rewards_screen_presentation {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.rewards_presentation_header {
+  font-size: 30px;
+}
+
+.rewards_presentation_offer {
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.answers {
+  padding-top: 9px;
+}
+
+.answer_container {
+  margin: auto;
+  margin-bottom: 10px;
+  font-size: 24px; 
+  width: 560px; 
+  padding: 12px;
+  line-height: 25px;
+
+  color: rgb(40, 40, 40);
+}
+
+.overall_answer_4 .color_bg {
+  background-color: rgb(50,200,50);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(rgb(100,225,100)),to(rgb(20,160,20)));
+}
+
+.overall_answer_3 .color_bg {
+  background-color: rgb(50,200,50);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(rgb(100,225,100)),to(rgb(20,160,20)));
+}
+
+.overall_answer_2 .color_bg {
+  background-color: rgb(200,200,0);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(rgb(255,255, 0)),to(rgb(200,160,0)));
+}
+
+.overall_answer_1 .color_bg {
+  background-color: rgb(255,50,50);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(rgb(255,100,100)),to(rgb(220,20,20)));
+}  
+
+.key_word_container {
+  font-size: 26px;
+  color: rgb(240, 240, 240);
+}
+
+.content_area {
+  height: 444px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.checkbox_question {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+
+.checkbox_item_container {
+  position: relative;
+  /*float: left;*/
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 24px; 
+  padding: 12px;
+  line-height: 25px;
+  color: rgb(40, 40, 40);
+}
+
+.overall_answer_4 .checkbox_item_container {
+  background-color: rgb(50,200,50);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(rgb(100,225,100)),to(rgb(20,160,20)));
+}
+
+.overall_answer_3 .checkbox_item_container {
+  background-color: rgb(50,200,50);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(rgb(100,225,100)),to(rgb(20,160,20)));
+}
+
+.overall_answer_2 .checkbox_item_container {
+  background-color: rgb(200,200,0);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(rgb(255,255, 0)),to(rgb(200,160,0)));
+}
+
+.overall_answer_1 .checkbox_item_container {
+  background-color: rgb(255,50,50);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(rgb(255,100,100)),to(rgb(220,20,20)));
+}  
+
+.checkbox_item_tick_image {
+  display: none;
+  position: absolute;
+  width: 33px;
+  top: 4px;
+  left: 17px;
+}
+
+.checkbox_item_checkbox_image {
+  float: left;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.checkbox_item_text {
+  margin-top: 3px;
+}
+
+.checkbox_item_keyword {
+  font-size: 26px;
+  color: rgb(240, 240, 240);
+}
+
+.checkbox_other_input {
+  margin-left: 20px;
+  width: 585px;
+  margin-top: 10px;
+}
+
+.checkbox_finish_container {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.checkbox_finish_button {
+  font-size: 24px;
+  width: 250px;
+  padding: 20px;
+}
