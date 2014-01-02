@@ -87,15 +87,32 @@ var n = this,
     $('#finish_content').hide();
  }
 
+
+var selected_feedback1_val;
+var selected_feedback2_val;
+var selected_feedback3_val;
+var selected_feedback_chk;
+var selected_feedback_other;
+
+
 var step_back = function() {};
 
 var current_step = function() {};
-
 
 show_feedback_1();
 
 function show_feedback_1(){
     hide_all();
+    $('#feedback1_content').html('');
+    $('#feedback2_content').html('');
+    $('#finish_content').html('');
+
+    selected_feedback1_val = '';
+    selected_feedback2_val = '';
+    selected_feedback3_val = '';
+    selected_feedback_chk = '';
+    selected_feedback_other = '';
+
 
     var results_div='<div class="nexus_content_container">';
     results_div +='<div style="width: 640px; margin: auto;">';
@@ -127,10 +144,6 @@ function show_feedback_1(){
     $('#feedback1_content').show();
     $('#feedback1_content').html(results_div);
 }
-
-var selected_feedback1_val;
-var selected_feedback2_val;
-var selected_feedback3_val;
 
 function show_feedback_2(feedback1_val){
     hide_all();
@@ -232,43 +245,43 @@ function show_feedback_2(feedback1_val){
         results_div += '<div style="clear: both;"> </div>';
 
         results_div += '<div class="default_container checkbox_item_container">';
-        results_div += '<img class="checkbox_item_tick_image checkbox_item_tick_image_2_0" src="img/tick.png" style="display: none;"> ';
-        results_div += '<img class="checkbox_item_checkbox_image" src="img/checkbox.png"> ';
+        results_div += '<img id="unchk_1" class="checkbox_item_tick_image checkbox_item_tick_image_2_0" src="img/tick.png" style="display: none;"> ';
+        results_div += '<img id="chk_1" class="checkbox_item_checkbox_image" src="img/checkbox.png"> ';
         results_div += '<div class="checkbox_item_text"> There was not enough <span class="checkbox_item_keyword">variety </span>in the menu</div>';
         results_div += '<div style="clear: both;"> </div>';
         results_div += '</div>   ';
 
         results_div += '<div class="default_container checkbox_item_container">';
-        results_div += '<img class="checkbox_item_tick_image checkbox_item_tick_image_2_1" src="img/tick.png" style="display: none;"> ';
-        results_div += '<img class="checkbox_item_checkbox_image" src="img/checkbox.png"> ';
+        results_div += '<img id="unchk_2" class="checkbox_item_tick_image checkbox_item_tick_image_2_1" src="img/tick.png" style="display: none;"> ';
+        results_div += '<img id="chk_2" class="checkbox_item_checkbox_image" src="img/checkbox.png"> ';
         results_div += '<div class="checkbox_item_text"> The restaurant should be <span class="checkbox_item_keyword">cleaner</span></div>';
         results_div += '<div style="clear: both;"> </div>';
         results_div += '</div>   ';
 
         results_div += '<div class="default_container checkbox_item_container">';
-        results_div += '<img class="checkbox_item_tick_image checkbox_item_tick_image_2_2" src="img/tick.png" style="display: none;"> ';
-        results_div += '<img class="checkbox_item_checkbox_image" src="img/checkbox.png"> ';
+        results_div += '<img id="unchk_3" class="checkbox_item_tick_image checkbox_item_tick_image_2_2" src="img/tick.png" style="display: none;"> ';
+        results_div += '<img id="chk_3" class="checkbox_item_checkbox_image" src="img/checkbox.png"> ';
         results_div += '<div class="checkbox_item_text"> The <span class="checkbox_item_keyword">neighbourhood </span>is run down</div>';
         results_div += '<div style="clear: both;"> </div>';
         results_div += '</div>   ';
 
         results_div += '<div class="default_container checkbox_item_container">';
-        results_div += '<img class="checkbox_item_tick_image checkbox_item_tick_image_2_3" src="img/tick.png" style="display: none;"> ';
-        results_div += '<img class="checkbox_item_checkbox_image" src="img/checkbox.png"> ';
+        results_div += '<img id="unchk_4" class="checkbox_item_tick_image checkbox_item_tick_image_2_3" src="img/tick.png" style="display: none;"> ';
+        results_div += '<img id="chk_4" class="checkbox_item_checkbox_image" src="img/checkbox.png"> ';
         results_div += '<div class="checkbox_item_text"> Staff should provide a <span class="checkbox_item_keyword">better service </span> and give more information on the dishes</div>';
         results_div += '<div style="clear: both;"> </div>';
         results_div += '</div>   ';
               
         results_div += '<div class="default_container checkbox_item_container">';
-        results_div += '<img class="checkbox_item_tick_image checkbox_item_tick_image_2_4" src="img/tick.png" style="display: none;"> ';
-        results_div += '<img class="checkbox_item_checkbox_image" src="img/checkbox.png"> ';
+        results_div += '<img id="unchk_5" class="checkbox_item_tick_image checkbox_item_tick_image_2_4" src="img/tick.png" style="display: none;"> ';
+        results_div += '<img id="chk_4" class="checkbox_item_checkbox_image" src="img/checkbox.png"> ';
         results_div += '<div class="checkbox_item_text"> My meal <span class="checkbox_item_keyword">took forever </span>to be served</div>';
         results_div += '<div style="clear: both;"> </div>';
         results_div += '</div>   ';
               
         results_div += '<div class="default_container checkbox_item_container">';
-        results_div += '<img class="checkbox_item_tick_image checkbox_item_tick_image_2_5" src="img/tick.png" style="display: none;"> ';
-        results_div += '<img class="checkbox_item_checkbox_image" src="img/checkbox.png"> ';
+        results_div += '<img id="unchk_6" class="checkbox_item_tick_image checkbox_item_tick_image_2_5" src="img/tick.png" style="display: none;"> ';
+        results_div += '<img id="chk_6" class="checkbox_item_checkbox_image" src="img/checkbox.png"> ';
         results_div += '<div class="checkbox_item_text"> The dishes are <span class="checkbox_item_keyword">overpriced</span></div>';
         results_div += '<div style="clear: both;"> </div>';
         results_div += '</div>   ';
@@ -276,7 +289,7 @@ function show_feedback_2(feedback1_val){
         results_div += '<input id="checkbox_other_input_2" class="checkbox_other_input" type="text" style="height: 45px;" placeholder="Other" value="">';
              
         results_div += '<div class="checkbox_finish_container">';
-        results_div += '<button class="btn btn-primary btn-large checkbox_finish_button" type="button" onclick="app.survey.pressFinishButton()">Finish</button>';
+        results_div += '<button class="btn btn-primary btn-large checkbox_finish_button" type="button" onclick="show_finish()">Finish</button>';
         results_div += '</div>';
 
         results_div += '</div>';
@@ -308,16 +321,21 @@ function show_feedback_2(feedback1_val){
             show_finish();
         }
     })
-    
+    selected_feedback_chk = ",";
     $(".checkbox_item_checkbox_image").click(function(){
+        selected_feedback_chk += $(this).attr("id").substr(4) + ",";
         $(this).prev("img").show();
     })
     $(".checkbox_item_tick_image").click(function(){
+        selected_feedback_chk = selected_feedback_chk.replace("," + $(this).attr("id").substr(6) + "," , ",");
         $(this).hide();
     })
 }
 
 function show_finish(){
+    if($('#checkbox_other_input_2').length){     
+        selected_feedback_other = $('#checkbox_other_input_2').val();
+    }
     hide_all();
 
     var results_div = '';
@@ -332,7 +350,7 @@ function show_finish(){
     results_div += '<option>Email</option>';
     results_div += '<option>Phone</option>';
     results_div += '</select>';
-    results_div += '<button class="btn btn-primary btn-large" type="button">';
+    results_div += '<button class="btn btn-primary btn-large" type="button" onclick="final_submit()" >';
     results_div += 'Submit ';
     results_div += '</button>';
     results_div += '</div>';
@@ -341,4 +359,33 @@ function show_finish(){
     $('#finish_content').show();
     $('#finish_content').html(results_div);
 
+}
+
+function final_submit(){
+    var params = "";
+    if($('#select_contact_type').val()=="Email")
+        params = "&email=" + $('#input_contact_info').val();
+    else
+        params = "&phone=" + $('#input_contact_info').val();
+
+    if(selected_feedback_chk == ",")
+        selected_feedback_chk = "";
+
+    $.ajax({
+      url: "https://www.getvesseltracker.com/feedback_hero_BSM_dev/send_feedback.php?feedback1=" + selected_feedback1_val 
+            + "&feedback2=" + selected_feedback2_val + "&feedback3=" + selected_feedback3_val 
+            + "&feedback4=" + selected_feedback_chk + "&feedbackother=" + selected_feedback_other + params,
+      datatype: 'json',
+      beforeSend: function() {
+        $(".spinner_index").css('display','block');
+        $(".spinner_index").center();
+      },
+      success: function(data){        
+        show_feedback_1();
+      },
+      error: function() {        
+        alert('Please try again in a minute.');
+        $('.spinner_index').hide();
+     } 
+    });
 }
